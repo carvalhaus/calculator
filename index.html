@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <header id="display">
+            <div id="theme-switcher"></div>
+            <h1 id="results">54</h1>
+            <p id="calcs">35+25-6</p>
+        </header>
+
+        <section id="keypad">
+            <div id="AC">AC</div>
+            <div id="change-signal">
+                <svg width="26" height="26" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.597 31.15H22.964V45.521C22.964 47.505 24.572 49.114 26.557 49.114C28.541 49.114 30.15 47.505 30.15 45.521V31.15H44.517C44.519 31.15 44.52 31.15 44.522 31.15C46.506 31.15 48.115 29.541 48.115 27.557C48.115 25.573 46.507 23.964 44.522 23.964H30.15V9.593C30.15 7.609 28.542 6 26.557 6C24.572 6 22.964 7.609 22.964 9.593V23.965H8.593C6.608 23.965 5 25.574 5 27.558C5 29.542 6.608 31.151 8.593 31.151L8.597 31.15Z"/>
+                <path d="M91.407 70.745H55.479C53.495 70.745 51.885 72.354 51.885 74.338C51.885 76.322 53.494 77.931 55.479 77.931H91.408C93.392 77.931 95.001 76.322 95.001 74.337C95 72.353 93.392 70.745 91.407 70.745Z"/>
+                <path d="M91.195 14.754C92.597 13.351 92.597 11.075 91.196 9.67301C89.792 8.27001 87.516 8.27001 86.113 9.67301L8.807 86.98C8.806 86.981 8.806 86.981 8.806 86.981C7.403 88.384 7.403 90.66 8.806 92.063C10.209 93.467 12.484 93.466 13.887 92.063L91.195 14.756C91.194 14.755 91.194 14.754 91.195 14.754Z"/>
+                </svg>
+            </div>
+            <button id="percent"><i data-feather="percent"></i></button>
+            <button id="divide"><i data-feather="divide"></i></button>
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
+            <button id="times"><i data-feather="x"></i></button>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button id="minus"><i data-feather="minus"></i></button>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button id="sum"><i data-feather="plus"></i></button>
+            <button id="zero">0</button>
+            <button id="dot">.</button>
+            <button id="equals">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 8H17C17.5523 8 18 8.44772 18 9C18 9.55228 17.5523 10 17 10H7C6.44772 10 6 9.55228 6 9C6 8.44772 6.44772 8 7 8ZM7 14H17C17.5523 14 18 14.4477 18 15C18 15.5523 17.5523 16 17 16H7C6.44772 16 6 15.5523 6 15C6 14.4477 6.44772 14 7 14Z"/>
+                </svg>
+            </button>
+        </section>
+
+    </main>
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>feather.replace()</script>
+</body>
+</html>
