@@ -1,7 +1,9 @@
 :root {
     --light-gray: #e3e9ec;
+    --mid-gray: #79818a;
     --dark-gray: #555a60;
     --mustard-yellow: #f4ab41;
+    --dark-yellow: #c48a33;
 }
 
 * {
@@ -12,48 +14,74 @@
 }
 
 body {
+    align-items: center;
     background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
 
 main {
     background-color: var(--dark-gray);
     border-radius: 2rem;
     height: 491px;
-    margin: 7rem auto;
     padding: 1rem;
     width: 299px;
 }
 
 #display {
-    text-align: right;
-    color: var(--mustard-yellow);
+    background-color: var(--light-gray);
+    border-radius: 1rem;
+    color: var(--dark-yellow);
+    height: 8.125rem;
     padding: 1rem;
+    text-align: right;
 }
 
-#display > h1 {
-    padding: 1rem 0;
+.results {
     font-size: 2.5rem;
+    height: 4.938rem;
+    padding: 1rem 0;
+    width: 14.688rem;
 }
 
-section {
+.calcs {
+    height: 1.188rem;
+}
+
+#keypad {
     align-items: center;
     color: #fff;
     display: grid;
     font-size: 1.625rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: calc(100% - 130px);
+    padding-top: 0.5rem;
     text-align: center;
 }
 
-section svg {
-    fill: #fff;
+#keypad > .operator:first-child {
+    color: var(--mustard-yellow);
 }
 
-section button {
+#keypad button {
     background-color: transparent;
+    border-radius: 1rem;
     color: #fff;
+    font-size: 1rem;
+    height: 100%;
+    outline: none;
+    width: 100%;
 }
 
-#equals {
+#keypad button:hover {
+    background-color: var(--mid-gray);
+}
+
+#keypad .operator {
+    font-size: 2rem;
+}
+
+.span-two {
     grid-column-start: span 2;
 }
